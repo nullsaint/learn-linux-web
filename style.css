@@ -3,16 +3,12 @@ body {
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.header {
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
-}
-
+/* Navigation Bar Styles */
 #navbar {
     overflow: hidden;
+    position: fixed;
     background-color: #333;
+    width: 100%;
 }
 
 #navbar a {
@@ -42,15 +38,30 @@ body {
 #navbar a.active {
     background-color: #4CAF50;
     color: white;
-}
+}  /* Navigation Bar Styles */
 
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/* Button */
 .button {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Green */
     border: none;
+    border-radius: 10px;
     color: white;
-    padding: 15px 32px;
+    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+   /* Button */
+
